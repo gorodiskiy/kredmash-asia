@@ -8807,6 +8807,11 @@ address {
 .table {
   border: 1px solid #000000; }
 
+.card-img-top {
+  height: 168px;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
 #go-top {
   position: fixed;
   bottom: 25px;

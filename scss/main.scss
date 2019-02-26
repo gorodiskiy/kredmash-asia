@@ -89,6 +89,10 @@ address{
 .table{
     border:1px solid #000000;
 }
+.card-img-top{
+    height: 168px;
+    object-fit: cover;
+}
 #go-top {
     position: fixed;
     bottom: 25px;
