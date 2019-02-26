@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    @@include('../templates/slider.html')
+    @@include('../templates/navigation.html') 
+    <main class="main" role="main">
+        <div class="content">
+            <h1 class="title text-center">Наши контакты</h1>
+            <hr width="100%" size="2" color="#000000" />
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 col-lg-6">
+                        <address>
+                            <p>Республика Казахстан, 010000, г.Астана, пр.Абая 95/1</p>
+                            <p><i class="fas fa-fax"></i><span>Тел.факс:</span><a href="fax:(7172) 34-70-82">+7 (7172)
+                                    34-70-82</a></p>
+                            <p><i class="fas fa-phone"></i><span>Моб:</span><a href="tel:(701) 413-46-16">+7 (701)
+                                    413-46-16</a></p>
+                            <p><i class="fas fa-envelope"></i><span>E-mail:</span><a href="mailto:kredmash.astana@gmail.com">kredmash.astana@gmail.com</a></p>
+                        </address>
+                    </div>
+                    <div class="col-md-6 col-lg-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d793.037614383861!2d71.4614276065586!3d51.167062666543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42458117fb8d31c9%3A0x30b6a407cd5b2f65!2z0L_RgNC-0YHQv9C10LrRgiDQkNCx0LDRjyA5NSwg0JDRgdGC0LDQvdCwIDAyMDAwMCwg0JrQsNC30LDRhdGB0YLQsNC9!5e1!3m2!1sru!2sua!4v1539114319581"
+                            width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-12">
+                        <p class="title">Форма обратной связи</p>
+                        <form method="POST" action="" autocomplete="off">
+                            <div class="form-group row">
+                                <label for="inputFullName" class="col-sm-3 col-form-label">ФИО:</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="inputFullName" required placeholder="ФИО">
+                                </div>
+                                <div class="valid-feedback"></div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputContact" class="col-sm-3 col-form-label">Контактная информация:</label>
+                                <div class="col-sm-9">
+                                    <input type="password" class="form-control" id="inputContact" required placeholder="Контактная информация">
+                                </div>
+                                <div class="valid-feedback"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="ClientText">Ваше сообщение:</label>
+                                <textarea class="form-control" name="" id="ClientText" required rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-danger">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    @@include('../templates/footer.html')
+    <a id="go-top" title="Вверх" style="display: none;"><svg version="1.1" viewBox="0 0 24 24 "><path d="M19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21M12,7L7,12H10V16H14V12H17L12,7Z "></path></svg></a>
+    @@include('../templates/script.html')
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    @@include('./slider.html')
+    @@include('./navigation.html')
+    <main class="main" role="main">
+        <div class="content">
+            <h1 class="title text-center">ТОО КРЕДМАШ АЗИЯ</h1>
+            <hr width="100%" size="2" color="#000000" />
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <a data-fancybox="gallery" href="img/sert_b.jpg" title="Наши Сертификаты" class="sert"><img src="img/sert_b.jpg"></a>
+                        <p><strong>ТОО КРЕДМАШ АЗИЯ</strong> создано в 2007 году для оперативного обеспечения запасными
+                            частями
+                            гарантированногокачества асфальтосмесительных установок производства ОАО «КРЕДМАШ» в РК и
+                            их технической поддержки.</p>
+                        <p>Наша компания является официальным представителем завода «Кредмаш» (Украина, г. Кременчуг) и
+                            располагает собственным складом для хранения запасных частей и транспортом для их отгрузки.
+                        </p>
+                        <p>Качество продукции гарантируется прямыми поставками с ОАО «КРЕДМАШ» г. Кременчуг Украина и
+                            НТЦ "Информационные системы"г. Кременчуг Украина </p>
+                        <p> В случае отсутствия на складе необходимых запасных частей или комплектующих обеспечивается
+                            поставка по предварительному заказу. </p>
+                        <p> При участии высококвалифицированных специалистов завода обеспечивается техническая
+                            поддержка, проведение работ по дефектовке и модернизации действующих асфальтосмесительных
+                            установок. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    @@include('./footer.html')
+    <a id="go-top" title="Вверх" style="display: none;"><svg version="1.1" viewBox="0 0 24 24 "><path d="M19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21M12,7L7,12H10V16H14V12H17L12,7Z "></path></svg></a>
+    @@include('./script.html')
+</body>
+
+</html>

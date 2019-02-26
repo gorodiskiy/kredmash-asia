@@ -32,6 +32,15 @@ img{
     margin: .67em 0;
     text-transform: uppercase;
     text-align: center;
+    position: relative;
+}
+h1.title::after{
+    content: '';
+    width: 10%;
+    height: 2px;
+    display: block;
+    margin: 0 auto;
+    background-color: $link-color;
 }
 .sert{
     max-width: 250px;
@@ -77,6 +86,9 @@ address{
 }
 
 // end footer
+.table{
+    border:1px solid #000000;
+}
 #go-top {
     position: fixed;
     bottom: 25px;
@@ -94,6 +106,9 @@ address{
     }
 }
 @media all and (max-width:768px){
+    html{
+        font-size: 80%;
+    }
     .sert{
         max-width:150px;
     }

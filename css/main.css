@@ -8754,7 +8754,16 @@ img {
   font-size: 2em;
   margin: .67em 0;
   text-transform: uppercase;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
+
+h1.title::after {
+  content: '';
+  width: 10%;
+  height: 2px;
+  display: block;
+  margin: 0 auto;
+  background-color: #bd1930; }
 
 .sert {
   max-width: 250px;
@@ -8795,6 +8804,9 @@ address {
   .footer p {
     margin: 0; }
 
+.table {
+  border: 1px solid #000000; }
+
 #go-top {
   position: fixed;
   bottom: 25px;
@@ -8811,6 +8823,8 @@ address {
     transition: .3s all ease; }
 
 @media all and (max-width: 768px) {
+  html {
+    font-size: 80%; }
   .sert {
     max-width: 150px; }
   .carousel-item:before {
