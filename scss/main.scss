@@ -76,7 +76,7 @@ address{
 // footer
 
 .footer{
-    margin-top: 16px;
+    margin-top: 1rem;
     background-color: #4a4a4a;
     color: #e2e2e2;
     padding: 1rem 0;
@@ -87,12 +87,22 @@ address{
 
 // end footer
 .table{
-    border:1px solid #000000;
+    border:1px solid #dee2e6;
 }
 .card-img-top{
     height: 168px;
     object-fit: cover;
 }
+.num{
+    color:$link-color;
+}
+.name{
+    text-align: center;
+    &:empty::before{
+        content: '-';
+    }
+}
+
 #go-top {
     position: fixed;
     bottom: 25px;
