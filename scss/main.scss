@@ -1,0 +1,121 @@
+@import './layout/bootstrap';
+@import'./utils/normalize';
+
+$link-color:#bd1930;
+html { font-size: 100% }
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    max-height: 9999999px;
+    word-break: break-word;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+    transition: .3s all ease;
+    &:hover, &:focus{    text-decoration: none;}
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.fas{
+    padding-right: .5rem;
+    color:$link-color;
+}
+.title{
+    font-weight: bold;
+    font-size: 2em;
+    margin: .67em 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+.sert{
+    max-width: 250px;
+    float: left;
+    padding-right: 1rem;
+}
+.btn-danger{
+    background-color: $link-color;
+}
+.dropdown-menu{
+    padding: .5rem;
+}
+address{
+    margin: 0;
+    a{
+        color:$link-color;
+    }
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color:$link-color;
+}
+.carousel-item:before{
+    content: '';
+    position: absolute;
+    pointer-events:none;
+    width: 236px;
+    height: 141px;
+    background:url(../img/logo.jpg) no-repeat;
+    background-size: contain;
+    top: 0;
+    right: 20%;
+}
+// footer
+
+.footer{
+    margin-top: 16px;
+    background-color: #4a4a4a;
+    color: #e2e2e2;
+    padding: 1rem 0;
+    p{
+        margin: 0;
+    }
+}
+
+// end footer
+#go-top {
+    position: fixed;
+    bottom: 25px;
+    right: 10px;
+    cursor: pointer;
+    display: none;
+    svg{
+        width: 30px;
+        fill: $link-color;
+        width: 35px;
+        cursor: pointer;
+        -webkit-transition: .3s all ease;
+        -o-transition: .3s all ease;
+        transition: .3s all ease;
+    }
+}
+@media all and (max-width:768px){
+    .sert{
+        max-width:150px;
+    }
+    .carousel-item:before{
+        width: 140px;
+        height: 55px;
+        right: 0;
+    }
+    .contacts{
+        margin: 1rem 0;
+    }
+    .card{
+        margin-bottom: 1rem;
+    }
+}
+@media (min-width:1440px){
+    .carousel-item > img{
+        width: 100%;
+        object-fit: cover;
+        max-height: 450px;
+    }
+    #go-top>svg {
+        width: 70px;
+    }
+}
